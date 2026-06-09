@@ -1,0 +1,141 @@
+:root {
+  --page: #f4f6f8;
+  --surface: #ffffff;
+  --ink: #172b42;
+  --text: #3c4d5f;
+  --muted: #748394;
+  --line: #d8e0e7;
+  --link: #1e638f;
+  --sans: "Segoe UI", system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  color: var(--text);
+  background: var(--page);
+  font-family: var(--sans);
+  line-height: 1.6;
+}
+
+h1,
+p,
+a,
+figcaption {
+  overflow-wrap: anywhere;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.page {
+  width: min(1120px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 3rem 0 4rem;
+  overflow-x: hidden;
+}
+
+.header {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1.25rem;
+  font-size: 0.95rem;
+}
+
+h1 {
+  margin: 0 0 0.7rem;
+  color: var(--ink);
+  font-size: clamp(2rem, 6vw, 3.7rem);
+  font-weight: 500;
+  line-height: 1.1;
+}
+
+.lead {
+  max-width: 760px;
+  margin: 0 0 0.7rem;
+  font-size: 1.15rem;
+}
+
+.role {
+  max-width: 760px;
+  margin: 0;
+  color: var(--muted);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.media-item {
+  margin: 0;
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 0.35rem;
+}
+
+.media-item-wide {
+  grid-column: 1 / -1;
+}
+
+.media-item img,
+.media-item video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: #dfe5eb;
+}
+
+.media-item-wide img,
+.media-item-wide video {
+  aspect-ratio: 16 / 9;
+}
+
+figcaption {
+  padding: 0.7rem 0.85rem;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 16px;
+  }
+
+  .page {
+    width: min(100% - 1.5rem, 1120px);
+    padding-top: 1.5rem;
+  }
+
+  h1 {
+    font-size: clamp(1.9rem, 11vw, 2.5rem);
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}

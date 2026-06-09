@@ -84,6 +84,7 @@ h1 {
 
 .gallery {
   display: grid;
+  align-items: start;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
 }
@@ -104,14 +105,28 @@ h1 {
 .media-item video {
   display: block;
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: clamp(18rem, 36vw, 30rem);
   object-fit: cover;
   background: #dfe5eb;
 }
 
+.media-item-contain img,
+.media-item-contain video {
+  height: auto;
+  max-height: 30rem;
+  object-fit: contain;
+  background: var(--surface);
+}
+
 .media-item-wide img,
 .media-item-wide video {
+  height: auto;
   aspect-ratio: 16 / 9;
+}
+
+figcaption a {
+  margin-left: 0.5rem;
+  font-size: 0.85rem;
 }
 
 figcaption {

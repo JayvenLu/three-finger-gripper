@@ -8,14 +8,14 @@ Live page: https://jayvenlu.github.io/three-finger-gripper/
 
 The editable hardware design sources are available in [`assets/CAD`](assets/CAD):
 
-| Model | STEP source | Browser preview |
-| --- | --- | --- |
-| Complete gripper | [`3finger_gripper.STEP`](assets/CAD/3finger_gripper.STEP) | [`3finger_gripper.glb`](assets/CAD/previews/3finger_gripper.glb) |
-| Sensor mold | [`mold.STEP`](assets/CAD/mold.STEP) | [`mold.glb`](assets/CAD/previews/mold.glb) |
+| Model | STEP source |
+| --- | --- |
+| Complete gripper | [`3finger_gripper.STEP`](assets/CAD/3finger_gripper.STEP) |
+| Sensor mold | [`mold.STEP`](assets/CAD/mold.STEP) |
 
-Use the STEP files for manufacturing and modification. The GLB files are derived, lightweight previews for the website.
+Use the STEP files for manufacturing and modification.
 
-The CAD sources and GLB derivatives under `assets/CAD/` are licensed under the [CERN Open Hardware Licence Version 2 - Strongly Reciprocal](assets/CAD/LICENSE.txt). Modified designs conveyed to others must remain available under the reciprocal terms of that license. The website code, photographs, videos, and other media outside `assets/CAD/` are not covered by this CAD license.
+The CAD sources under `assets/CAD/` are licensed under the [CERN Open Hardware Licence Version 2 - Strongly Reciprocal](assets/CAD/LICENSE.txt). Modified designs conveyed to others must remain available under the reciprocal terms of that license. The website code, photographs, videos, and other media outside `assets/CAD/` are not covered by this CAD license.
 
 Suggested citation:
 

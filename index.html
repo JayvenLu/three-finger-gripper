@@ -10,6 +10,7 @@
   <meta property="og:image" content="assets/images/three-finger-gripper.jpg">
   <title>Three-Finger Gripper | Xiaofan Lu</title>
   <link rel="stylesheet" href="assets/css/style.css">
+  <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.3.1/model-viewer.min.js"></script>
 </head>
 <body>
   <main class="page">
@@ -44,6 +45,64 @@
         </video>
         <figcaption>Valve operation demo</figcaption>
       </figure>
+    </section>
+
+    <section class="cad-section" aria-labelledby="cad-title">
+      <div class="section-heading">
+        <p class="eyebrow">Open hardware</p>
+        <h2 id="cad-title">Open-source CAD</h2>
+        <p>Interactive GLB files are provided for browser preview. Use the STEP source files for manufacturing, inspection, and design modification.</p>
+      </div>
+
+      <div class="cad-grid">
+        <article class="cad-card">
+          <model-viewer
+            src="assets/CAD/previews/3finger_gripper.glb"
+            alt="Interactive 3D preview of the complete three-finger gripper"
+            camera-controls
+            auto-rotate
+            auto-rotate-delay="1500"
+            interaction-prompt="auto"
+            loading="lazy"
+            shadow-intensity="0.8"
+            tone-mapping="neutral">
+          </model-viewer>
+          <div class="cad-card-body">
+            <div>
+              <h3>Complete gripper</h3>
+              <p>STEP source · 10.94 MB</p>
+            </div>
+            <a class="download-link" href="assets/CAD/3finger_gripper.STEP" download>Download STEP</a>
+          </div>
+        </article>
+
+        <article class="cad-card">
+          <model-viewer
+            src="assets/CAD/previews/mold.glb"
+            alt="Interactive 3D preview of the three-finger gripper tactile sensor mold"
+            camera-controls
+            auto-rotate
+            auto-rotate-delay="1500"
+            interaction-prompt="auto"
+            loading="lazy"
+            shadow-intensity="0.8"
+            tone-mapping="neutral">
+          </model-viewer>
+          <div class="cad-card-body">
+            <div>
+              <h3>Sensor mold</h3>
+              <p>STEP source · 2.35 MB</p>
+            </div>
+            <a class="download-link" href="assets/CAD/mold.STEP" download>Download STEP</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="cad-license">
+        <p><strong>Licensed under CERN-OHL-S-2.0.</strong> Contributors: Xiaofan Lu, Yuankai Lin, and Jiahui Chen.</p>
+        <p>State Key Laboratory of Intelligent Manufacturing Equipment and Technology (智能制造装备与技术全国重点实验室).</p>
+        <a href="assets/CAD/LICENSE.txt">Read the CAD license</a>
+      </div>
     </section>
   </main>
 </body>
